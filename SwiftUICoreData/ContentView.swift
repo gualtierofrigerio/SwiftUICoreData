@@ -13,15 +13,18 @@ struct ContentView: View {
     @EnvironmentObject var dataSource:DataSource
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Select artist")
-                List(dataSource.getArtists(), id:\.name) { artist in
-                    NavigationLink(destination:AlbumsView(albums:self.dataSource.getAlbums(forArtist: artist.name))) {
-                        Text(artist.name)
+        TabView {
+            NavigationView {
+                VStack {
+                    Text("Select artist")
+                    List(dataSource.getArtists(), id:\.name) { artist in
+                        NavigationLink(destination:AlbumsView(albums:self.dataSource.getAlbums(forArtist: artist.name))) {
+                            Text(artist.name)
+                        }
                     }
                 }
-            }
+            }.tabItem {Text("List")}.tag(1)
+            FavouritesView().tabItem {Text("Fav")}.tag(2)
         }
     }
 }
