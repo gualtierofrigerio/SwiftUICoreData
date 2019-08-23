@@ -18,6 +18,7 @@
 		256E482E230ED7CF004C03CC /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = 256E482D230ED77A004C03CC /* artists.json */; };
 		256E482F230ED7D3004C03CC /* albums.json in Resources */ = {isa = PBXBuildFile; fileRef = 256E482C230ED719004C03CC /* albums.json */; };
 		256E4833230ED8EF004C03CC /* AlbumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E4832230ED8EF004C03CC /* AlbumsView.swift */; };
+		256E4835230FD94F004C03CC /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E4834230FD94F004C03CC /* FavouritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		256E482C230ED719004C03CC /* albums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
 		256E482D230ED77A004C03CC /* artists.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
 		256E4832230ED8EF004C03CC /* AlbumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsView.swift; sourceTree = "<group>"; };
+		256E4834230FD94F004C03CC /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				256E4813230E8AAF004C03CC /* AppDelegate.swift */,
 				256E481A230E8AAF004C03CC /* ContentView.swift */,
 				256E482A230EBDFF004C03CC /* DataSource.swift */,
+				256E4834230FD94F004C03CC /* FavouritesView.swift */,
 				256E4815230E8AAF004C03CC /* SceneDelegate.swift */,
 				256E481C230E8AB0004C03CC /* Assets.xcassets */,
 				256E4821230E8AB0004C03CC /* LaunchScreen.storyboard */,
@@ -168,6 +171,7 @@
 				256E4833230ED8EF004C03CC /* AlbumsView.swift in Sources */,
 				256E481B230E8AAF004C03CC /* ContentView.swift in Sources */,
 				256E482B230EBDFF004C03CC /* DataSource.swift in Sources */,
+				256E4835230FD94F004C03CC /* FavouritesView.swift in Sources */,
 				256E4819230E8AAF004C03CC /* SwiftUICoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
