@@ -19,6 +19,11 @@ struct Album: Codable {
     var artist:String
 }
 
+public class Favourite: NSManagedObject {
+    @NSManaged public var album:String
+    @NSManaged public var artist:String
+}
+
 class DataSource: ObservableObject {
     
     @Published var changed = false
@@ -71,6 +76,18 @@ class DataSource: ObservableObject {
         }
     }
 }
+
+// MARK: Class functions
+
+extension DataSource {
+    class func fetchAllFavourites() -> NSFetchRequest<Favourite> {
+        let request = NSFetchRequest<Favourite>(entityName: "Favourite")
+        request.sortDescriptors = [NSSortDescriptor(key: "album", ascending: true)]
+        return request
+    }
+}
+
+// MARK: Private functions
 
 extension DataSource {
     
